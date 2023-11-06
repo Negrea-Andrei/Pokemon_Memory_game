@@ -1,0 +1,27 @@
+:root {
+    --background-color: rgb(218, 218, 218);
+    --home-page-background: transparent;
+    --home-page-border-color: aliceblue;
+    --button-background: aliceblue;
+    --button-border: rgb(104, 104, 104);
+    --pulse-start-color: var(--button-background);
+    --pulse-end-color: rgb(255, 63, 63);
+    --top-background: red;
+    --middle-background: black;
+    --bottom-background: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
