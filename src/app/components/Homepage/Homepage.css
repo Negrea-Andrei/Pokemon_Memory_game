@@ -26,7 +26,7 @@
 }
 
 .top {
-    height: 40%;
+    height: 42%;
     width: 100%;
     background-color: var(--top-background);
 }
@@ -74,7 +74,7 @@
 }
 
 .middle {
-    height: 20%;
+    height: 15%;
     width: 95%;
     background-color: var(--middle-background);
     display: flex;
@@ -84,7 +84,7 @@
 }
 
 .bottom {
-    height: 40%;
+    height: 43%;
     width: 100%;
     background-color: var(--bottom-background);
 }

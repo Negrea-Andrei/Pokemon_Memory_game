@@ -10,7 +10,7 @@ export default function Homepage({ startGame }) {
 
     setTimeout(() => {
       startGame();
-    }, 700);
+    }, 600);
   };
 
   return (

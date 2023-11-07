@@ -1,5 +1,6 @@
 "use client"
 import Homepage from "./components/Homepage/Homepage";
+import Game from "./components/Game/Game";
 import { useState } from "react";
 
 
@@ -11,8 +12,8 @@ export default function App() {
   }
 
   return (
-    <>
-      {start ? null : <Homepage startGame={startGame} />}
-    </>
+    <div className="container">
+      {start ? <Game /> : <Homepage startGame={startGame} />}
+    </div>
   );
 }
