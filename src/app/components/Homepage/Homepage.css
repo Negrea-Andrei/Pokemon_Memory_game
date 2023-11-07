@@ -12,6 +12,11 @@
     animation: rotateAnimation 1s alternate infinite ease-in-out;
 }
 
+.fade-out {
+    opacity: 0;
+    transition: 0.6s opacity;
+}
+
 .home_page:hover {
     animation-play-state: paused;
 }
