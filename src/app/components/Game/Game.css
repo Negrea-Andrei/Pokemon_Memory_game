@@ -6,3 +6,41 @@
     opacity: 1;
     transition: 0.6s opacity;
 }
+
+.game {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemon-grid {
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pokemon-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: green;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pokemon-card img {
+    scale: 1.3;
+}
+
+.pokemon-card p {
+    font-size: x-large;
+    font-weight: 600;
+
+}
