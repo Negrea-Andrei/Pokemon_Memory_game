@@ -25,12 +25,17 @@
     gap: 25px;
 }
 
+.game-over {
+    font: 5rem sans-serif;
+    color: white;
+}
+
 .pokemon-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: green;
+    background-color: var(--pokemon-card);
     border-radius: 15px;
     cursor: pointer;
 }
@@ -43,4 +48,16 @@
     font-size: x-large;
     font-weight: 600;
 
+}
+
+.points {
+    position: absolute;
+    top: 15px;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5%;
+    height: 3rem;
 }

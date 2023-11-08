@@ -9,6 +9,7 @@
     --top-background: red;
     --middle-background: black;
     --bottom-background: rgb(255, 255, 255);
+    --pokemon-card: rgb(48, 192, 4);
 }
 
 * {
@@ -30,6 +31,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
     height: 100vh;
     width: 100%;

@@ -174,6 +174,8 @@ export default function App() {
   const [pokemonData, setPokemonData] = useState([]);
   const [clickedPokemonNames, setClickedPokemonNames] = useState([]);
   const [gameOver, setGameOver] = useState(false);
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
   const startGame = () => {
     setStart(true);
@@ -216,15 +218,21 @@ export default function App() {
     if (!clickedPokemonNames.includes(pokemonName)) {
       const updatedClickedPokemonNames = [...clickedPokemonNames, pokemonName];
       setClickedPokemonNames(updatedClickedPokemonNames);
+      setScore((score) => score + 1);
+      console.log(score);
       fetchPokemonData();
       console.log(updatedClickedPokemonNames);
     } else {
+      if (score > bestScore) {
+        setBestScore(score);
+      }
       setGameOver(true);
     }
   };
 
   const handleRestartGame = () => {
     setClickedPokemonNames([]);
+    setScore(0);
     setGameOver(false);
     fetchPokemonData();
   };
@@ -239,6 +247,8 @@ export default function App() {
           handleDivClick={handleDivClick}
           handleRestartGame={handleRestartGame}
           pokemonData={pokemonData}
+          score={score}
+          bestScore={bestScore}
         />
       ) : (
         <Homepage startGame={startGame} />

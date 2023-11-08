@@ -3,39 +3,48 @@ import "./Game.css";
 
 export default function Game({
   handleDivClick,
-  handleRestartGame,
-  fetchPokemonData,
   gameOver,
   start,
   pokemonData,
+  score,
+  bestScore,
 }) {
-  const [isFadedIn, setIsFadedIn] = useState(false);
-
-  setTimeout(() => {
-    setIsFadedIn(true);
-  }, 100);
-
   return (
-    <div className={`container ${isFadedIn ? "fade-in" : ""}`}>
+    <div className="container">
       {start ? (
         <div className="game">
-          <h1>Gen 1 Pokemon</h1>
-          <div className="pokemon-grid">
-            {pokemonData.map((pokemon, index) => (
-              <div
-                key={index}
-                className="pokemon-card"
-                onClick={() => handleDivClick(pokemon.name)}
-              >
-                <img src={pokemon.image} alt={`Pokemon ${index + 1}`} />
-                <p>{pokemon.name}</p>
+          {gameOver ? (
+            <>
+              <p className="game-over">Game Over</p>
+              <p style={{ color: "white" }}>Score:{score}</p>
+              <p style={{ color: "white" }}>Best Score:{bestScore}</p>
+            </>
+          ) : (
+            <>
+              <h1>Gen 1 Pokemon</h1>
+              <div className="pokemon-grid">
+                <div className="points">
+                  <p>Score:{score}</p>
+                  <p>Best Score:{bestScore}</p>
+                </div>
+                {pokemonData.map((pokemon, index) => (
+                  <div
+                    key={index}
+                    className="pokemon-card"
+                    onClick={() => handleDivClick(pokemon.name)}
+                  >
+                    <img src={pokemon.image} alt={`Pokemon ${index + 1}`} />
+                    <p>
+                      {pokemon.name.slice(0, 1).toUpperCase() +
+                        pokemon.name.slice(1)}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
         </div>
-      ) : (
-        null
-      )}
+      ) : null}
     </div>
   );
 }

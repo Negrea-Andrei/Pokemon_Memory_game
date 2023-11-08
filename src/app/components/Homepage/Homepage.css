@@ -25,6 +25,11 @@
     animation: pulse infinite ease-in-out 0.5s alternate;
 }
 
+.home_page:hover .button::before {
+    content: "START";
+    font-size: x-large;
+}
+
 .top {
     height: 42%;
     width: 100%;
