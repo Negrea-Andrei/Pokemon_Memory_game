@@ -93,3 +93,48 @@
     width: 100%;
     background-color: var(--bottom-background);
 }
+
+@media screen and (max-width: 700px) {
+    .home_page {
+        height: 42vh;
+        width: 42vh;
+    }
+
+    .top {
+        height: 44%;
+        width: 100%;
+        background-color: var(--top-background);
+    }
+    
+    .button {
+        width: 4vh;
+        height: 4vh;
+        background-color: var(--button-background);
+        border: none;
+        border-radius: 50%;
+        transition: background-color 0.3s ease-in-out;
+        border: 3px solid var(--button-border);
+    }
+
+    .home_page:hover .button::before {
+        content: "START";
+        font-size: x-small;
+    }
+    
+    .middle {
+        height: 12%;
+        width: 95%;
+        background-color: var(--middle-background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid silver;
+    }
+    
+    .bottom {
+        height: 44%;
+        width: 100%;
+        background-color: var(--bottom-background);
+    }
+    
+}
