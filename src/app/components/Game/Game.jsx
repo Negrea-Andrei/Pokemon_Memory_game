@@ -10,7 +10,7 @@ export default function Game({
   bestScore,
 }) {
   return (
-    <div className="container">
+    <div className="container-game">
       {start ? (
         <div className="game">
           {gameOver ? (

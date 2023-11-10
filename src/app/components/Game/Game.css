@@ -28,6 +28,7 @@
 .game-over {
     font: 5rem sans-serif;
     color: white;
+    text-align: center;
 }
 
 .pokemon-card {
@@ -60,4 +61,53 @@
     flex-direction: column;
     width: 5%;
     height: 3rem;
+}
+
+.container-game {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .pokemon-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .pokemon-grid {
+        gap: 5px
+    }
+
+    .game{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .pokemon-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .pokemon-grid {
+        gap: 5px
+    }
+
+    .game{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

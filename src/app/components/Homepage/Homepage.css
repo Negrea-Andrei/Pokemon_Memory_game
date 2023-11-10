@@ -94,7 +94,32 @@
     background-color: var(--bottom-background);
 }
 
+@media screen and (max-width: 915px) {
+    
+    .container {
+        height: 135vh;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .home_page {
+        position: absolute;
+        top: 15px;
+    }
+
+    .home_page:hover .button::before {
+        content: "START";
+        font-size: x-small;
+    }
+}
+
 @media screen and (max-width: 700px) {
+
+    .container {
+        height: 100vh;
+    }
+
     .home_page {
         height: 42vh;
         width: 42vh;
@@ -136,5 +161,4 @@
         width: 100%;
         background-color: var(--bottom-background);
     }
-    
 }
