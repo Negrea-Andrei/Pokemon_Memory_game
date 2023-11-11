@@ -6,6 +6,7 @@ export default function Game({
   gameOver,
   start,
   pokemonData,
+  handleRestartGame,
   score,
   bestScore,
 }) {
@@ -18,6 +19,9 @@ export default function Game({
               <p className="game-over">Game Over</p>
               <p style={{ color: "white" }}>Score:{score}</p>
               <p style={{ color: "white" }}>Best Score:{bestScore}</p>
+              <button className="restart" onClick={handleRestartGame}>
+                Try again?
+              </button>
             </>
           ) : (
             <>

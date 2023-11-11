@@ -31,6 +31,10 @@
     text-align: center;
 }
 
+.game-over ~ p {
+    font-size: x-large;
+}
+
 .pokemon-card {
     display: flex;
     justify-content: center;
@@ -70,6 +74,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.restart {
+    background-color: red;
+    width: clamp(150px, 10%, 300px);
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in;
+    margin-top: 15px;
+    font-size: larger
+}
+
+.restart:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 700px) {
