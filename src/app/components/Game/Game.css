@@ -123,6 +123,14 @@
         gap: 5px
     }
 
+    .pokemon-card p {
+        display: none;
+    }
+
+    .pokemon-card img {
+        scale: 0.8;
+    }
+
     .game{
         display: flex;
         flex-direction: column;
