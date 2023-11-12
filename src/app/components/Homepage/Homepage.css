@@ -36,6 +36,17 @@
     background-color: var(--top-background);
 }
 
+.top::before {
+    font-size: xx-large;
+    height: 100%;
+    width: 100%;
+    color: black;
+    content: "Click the pokemon only once!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button {
     width: 10vh;
     height: 10vh;
@@ -94,8 +105,7 @@
     background-color: var(--bottom-background);
 }
 
-@media screen and (max-width: 915px) {
-    
+@media screen and (max-width: 915px) {    
     .container {
         height: 135vh;
         display: flex;
@@ -118,6 +128,13 @@
 
     .container {
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home_page {
+        position: inherit;
     }
 
     .home_page {
@@ -129,6 +146,10 @@
         height: 44%;
         width: 100%;
         background-color: var(--top-background);
+    }
+
+    .top::before {
+        font-size: x-large;
     }
     
     .button {
