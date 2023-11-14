@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokemon Memory Game
 
-## Getting Started
+The Pokemon Memory Game is a web application built using Next.js, React, and the PokeAPI. It provides a fun and interactive way for users to test their memory by matching Pokemon images in a grid.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [How to Play](#how-to-play)
+- [Technologies Used](#technologies-used)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Memory Game**: Classic memory matching game with Pokemon images.
+- **Random Pokemon Selection**: A function to randomly select a set of Pokemon for each game.
+- **Real-time Score Tracking**: Track your score and try to beat your best score.
+- **Responsive Design**: Play the game seamlessly on various devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Play
 
-## Learn More
+1. **Access the Game**: Open your web browser and go to [Game URL] to access the Pokemon Memory Game.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Start Matching**: Click on Pokemon images to reveal them. Try to match pairs of identical Pokemon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Score Tracking**: Your current score and best score are displayed on the screen. Try to beat your best score with each game.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Game Over**: If you click on the same Pokemon twice, the game is over. Restart the game to play again.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js**: React framework for server-rendered React applications.
+- **React**: JavaScript library for building user interfaces.
+- **PokeAPI**: RESTful API for accessing Pokemon data and images.
+- **Styled-components**: CSS-in-JS library for styling components.
+- **React Hooks**: Utilized for state management in functional components.
+- **Responsive Design**: Ensures a seamless gaming experience on different devices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to clone the repository and enjoy playing the Pokemon Memory Game!
