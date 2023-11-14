@@ -34,4 +34,4 @@ The Pokemon Memory Game is a web application built using Next.js, React, and the
 - **React Hooks**: Utilized for state management in functional components.
 - **Responsive Design**: Ensures a seamless gaming experience on different devices.
 
-Feel free to clone the repository and enjoy playing the Pokemon Memory Game!
+Feel free to clone the repository and enjoy playing the Pokemon Game!
