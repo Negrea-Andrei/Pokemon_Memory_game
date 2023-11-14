@@ -17,7 +17,7 @@ The Pokemon Memory Game is a web application built using Next.js, React, and the
 
 ## How to Play
 
-1. **Access the Game**: Open your web browser and go to [Game URL] to access the Pokemon Memory Game.
+1. **Access the Game**: Open your web browser and go to pokemon-memory-game-pi.vercel.app to access the Pokemon Memory Game.
 
 2. **Start Matching**: Click on Pokemon images to reveal them. Try to match pairs of identical Pokemon.
 
