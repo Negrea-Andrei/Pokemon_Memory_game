@@ -80,7 +80,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 915px) {    
+@media screen and (max-width: 1000px) {    
     
     .pokemon-card p {
         display: none;
