@@ -220,9 +220,7 @@ export default function App() {
       const updatedClickedPokemonNames = [...clickedPokemonNames, pokemonName];
       setClickedPokemonNames(updatedClickedPokemonNames);
       setScore((score) => score + 1);
-      console.log(score);
       fetchPokemonData();
-      console.log(updatedClickedPokemonNames);
     } else {
       if (score > bestScore) {
         setBestScore(score);
