@@ -113,6 +113,10 @@
         position: relative;
     }
 
+    .top::before {
+    font-size: 1.3rem;
+}
+
     .home_page {
         position: absolute;
         top: 15px;
