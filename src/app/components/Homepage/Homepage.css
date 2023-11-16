@@ -164,7 +164,7 @@
 
     .home_page:hover .button::before {
         content: "START";
-        font-size: 7px;
+        font-size: 9px;
     }
     
     .middle {
