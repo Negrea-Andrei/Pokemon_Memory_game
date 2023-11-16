@@ -3,8 +3,7 @@ import Homepage from "./components/Homepage/Homepage";
 import Game from "./components/Game/Game";
 import { useState, useEffect } from "react";
 
-function getRandomPokemon() {
-  const gen1Pokemon = [
+const gen1Pokemon = [
     "bulbasaur",
     "ivysaur",
     "venusaur",
@@ -157,6 +156,8 @@ function getRandomPokemon() {
     "mewtwo",
     "mew",
   ];
+
+function getRandomPokemon() {  
 
   const randomPokemon = [];
   while (randomPokemon.length < 15) {
