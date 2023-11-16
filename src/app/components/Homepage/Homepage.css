@@ -105,7 +105,7 @@
     background-color: var(--bottom-background);
 }
 
-@media screen and (max-width: 915px) {    
+@media screen and (max-width: 920px) {    
     .container {
         height: 135vh;
         display: flex;
