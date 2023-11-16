@@ -151,10 +151,6 @@
         width: 100%;
         background-color: var(--top-background);
     }
-
-    .top::before {
-        font-size: large;
-    }
     
     .button {
         width: 4vh;
