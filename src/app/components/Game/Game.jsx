@@ -37,7 +37,7 @@ export default function Game({
                     className="pokemon-card"
                     onClick={() => handleDivClick(pokemon.name)}
                   >
-                    <img src={pokemon} alt={`Pokemon ${index + 1}`} />
+                    <img src={pokemon.image} alt={`Pokemon ${index + 1}`} />
                   </div>
                 ))}
               </div>
