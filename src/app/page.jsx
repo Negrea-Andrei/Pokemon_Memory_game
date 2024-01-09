@@ -194,7 +194,7 @@ export default function App() {
             throw Error(`HTTP Error! Status: ${response.status}`);
           }
           const data = await response.json();
-          return data.sprites.front_default;
+          return {image: data.sprites.front_default, name: data.name};
         } catch (error) {
           console.error("Error fetching Pokemon data:", error);
           return null;
