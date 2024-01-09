@@ -38,10 +38,6 @@ export default function Game({
                     onClick={() => handleDivClick(pokemon.name)}
                   >
                     <img src={pokemon.image} alt={`Pokemon ${index + 1}`} />
-                    <p>
-                      {pokemon.name.slice(0, 1).toUpperCase() +
-                        pokemon.name.slice(1)}
-                    </p>
                   </div>
                 ))}
               </div>
