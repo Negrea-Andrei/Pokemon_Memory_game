@@ -218,7 +218,7 @@ export default function App() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>; // You can replace this with your loading indicator/component
+    return <p>Loading...</p>;
   }
 
   const handleDivClick = (pokemonName) => {
