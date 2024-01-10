@@ -183,6 +183,8 @@ export default function App() {
     setStart(true);
   };
 
+    //need to add loading state here (pokeball)
+
   async function fetchPokemonData() {
     try {
       const randomPokemon = getRandomPokemon();
@@ -217,10 +219,6 @@ export default function App() {
   useEffect(() => {
     fetchPokemonData();
   }, []);
-
-  if (loading) {
-    return <p>Loading...</p>; // You can replace this with your loading indicator/component
-  }
 
   const handleDivClick = (pokemonName) => {
     if (!clickedPokemonNames.includes(pokemonName)) {
