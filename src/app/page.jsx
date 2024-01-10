@@ -194,7 +194,10 @@ export default function App() {
             throw Error(`HTTP Error! Status: ${response.status}`);
           }
           const data = await response.json();
-          return {image: data.sprites.front_default, name: data.name};
+          return {
+            name: data.name,
+            image: data.sprites.front_default,
+          };
         } catch (error) {
           console.error("Error fetching Pokemon data:", error);
           return null;
@@ -203,14 +206,20 @@ export default function App() {
 
       const data = await Promise.all(pokemonDataPromises);
       setPokemonData(data);
+      setLoading(false); // Set loading to false once data is fetched
     } catch (error) {
       console.error("Error fetching random Pokemon:", error);
+      setLoading(false); // Set loading to false in case of an error
     }
   }
 
   useEffect(() => {
     fetchPokemonData();
   }, []);
+
+  if (loading) {
+    return <p>Loading...</p>; // You can replace this with your loading indicator/component
+  }
 
   const handleDivClick = (pokemonName) => {
     if (!clickedPokemonNames.includes(pokemonName)) {
