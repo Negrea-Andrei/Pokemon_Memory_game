@@ -177,6 +177,7 @@ export default function App() {
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   const startGame = () => {
     setStart(true);
@@ -218,7 +219,7 @@ export default function App() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>Loading...</p>; // You can replace this with your loading indicator/component
   }
 
   const handleDivClick = (pokemonName) => {
