@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "howler": "^2.2.4",
-    "next": "latest",
+    "next": "^14.0.4",
     "react": "latest",
     "react-dom": "latest"
   },

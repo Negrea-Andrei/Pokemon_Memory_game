@@ -177,13 +177,10 @@ export default function App() {
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
-  const [loading, setLoading] = useState(true);
 
   const startGame = () => {
     setStart(true);
   };
-
-    //need to add loading state here (pokeball)
 
   async function fetchPokemonData() {
     try {
@@ -209,10 +206,8 @@ export default function App() {
 
       const data = await Promise.all(pokemonDataPromises);
       setPokemonData(data);
-      setLoading(false); // Set loading to false once data is fetched
     } catch (error) {
       console.error("Error fetching random Pokemon:", error);
-      setLoading(false); // Set loading to false in case of an error
     }
   }
 
