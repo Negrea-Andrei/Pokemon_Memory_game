@@ -16,7 +16,7 @@ export default function Game({
       {start ? (
         <div className="game">
           {loading ? (
-            <p className="loading">Loading Pokemon</p>
+            <p className="loading">Loading Pokemon...</p>
           ) : gameOver ? (
             <>
               <p className="game-over">Game Over</p>

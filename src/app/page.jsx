@@ -185,8 +185,7 @@ export default function App() {
 
   async function fetchPokemonData() {
     try {
-      setLoading(true); // Set loading to true when starting the fetch
-
+      setLoading(true); 
       const randomPokemon = getRandomPokemon(setLoading);
       const pokemonDataPromises = randomPokemon.map(async (pokemon) => {
         try {
@@ -212,7 +211,7 @@ export default function App() {
     } catch (error) {
       console.error("Error fetching random Pokemon:", error);
     } finally {
-      setLoading(false); // Set loading to false when the fetch is complete
+      setLoading(false); 
     }
   }
 
