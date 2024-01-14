@@ -177,6 +177,7 @@ export default function App() {
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   const startGame = () => {
     setStart(true);
@@ -184,7 +185,9 @@ export default function App() {
 
   async function fetchPokemonData() {
     try {
-      const randomPokemon = getRandomPokemon();
+      setLoading(true); // Set loading to true when starting the fetch
+
+      const randomPokemon = getRandomPokemon(setLoading);
       const pokemonDataPromises = randomPokemon.map(async (pokemon) => {
         try {
           const response = await fetch(
@@ -208,6 +211,8 @@ export default function App() {
       setPokemonData(data);
     } catch (error) {
       console.error("Error fetching random Pokemon:", error);
+    } finally {
+      setLoading(false); // Set loading to false when the fetch is complete
     }
   }
 
@@ -242,6 +247,7 @@ export default function App() {
         <Game
           start={start}
           gameOver={gameOver}
+          loading={loading}
           fetchPokemonData={fetchPokemonData}
           handleDivClick={handleDivClick}
           handleRestartGame={handleRestartGame}

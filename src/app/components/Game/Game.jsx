@@ -9,16 +9,19 @@ export default function Game({
   handleRestartGame,
   score,
   bestScore,
+  loading,
 }) {
   return (
     <div className="container-game">
       {start ? (
         <div className="game">
-          {gameOver ? (
+          {loading ? (
+            <p className="loading">Loading Pokemon</p>
+          ) : gameOver ? (
             <>
               <p className="game-over">Game Over</p>
-              <p style={{ color: "white" }}>Score:{score}</p>
-              <p style={{ color: "white" }}>Best Score:{bestScore}</p>
+              <p style={{ color: "white" }}>Score: {score}</p>
+              <p style={{ color: "white" }}>Best Score: {bestScore}</p>
               <button className="restart" onClick={handleRestartGame}>
                 Try again?
               </button>
@@ -28,8 +31,8 @@ export default function Game({
               <h1>Gen 1 Pokemon</h1>
               <div className="pokemon-grid">
                 <div className="points">
-                  <p>Score:{score}</p>
-                  <p>Best Score:{bestScore}</p>
+                  <p>Score: {score}</p>
+                  <p>Best Score: {bestScore}</p>
                 </div>
                 {pokemonData.map((pokemon, index) => (
                   <div

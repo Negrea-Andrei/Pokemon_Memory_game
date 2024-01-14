@@ -16,6 +16,11 @@
     flex-direction: column;
 }
 
+.game .loading {
+    font-size: x-large;
+    color: rgb(255, 87, 87);
+}
+
 .pokemon-grid {
     width: 80%;
     height: 80vh;
