@@ -1,3 +1,4 @@
+![Demo](src/app/pokemon_readme.gif)
 # Pokemon Memory Game
 
 The Pokemon Memory Game is a web application built using Next.js, React, and the PokeAPI. It provides a fun and interactive way for users to test their memory by matching Pokemon images in a grid.
